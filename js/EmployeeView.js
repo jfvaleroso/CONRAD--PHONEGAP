@@ -50,7 +50,8 @@ var EmployeeView = function(adapter, template, employee) {
         var options =   {   quality: 50,
             destinationType: Camera.DestinationType.DATA_URL,
             sourceType: 1,      // 0:Photo Library, 1=Camera, 2=Saved Album
-            encodingType: 0     // 0=JPG 1=PNG
+            encodingType: 0,     // 0=JPG 1=PNG
+            saveToPhotoAlbum: true
         };
 
         navigator.camera.getPicture(
